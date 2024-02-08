@@ -8,6 +8,7 @@ import {
   View,
   Font,
 } from "@react-pdf/renderer";
+import { Helmet } from "react-helmet";
 
 Font.register({
   family: "Open Sans",

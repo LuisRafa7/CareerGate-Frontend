@@ -15,10 +15,6 @@ import IsPrivate from "./components/IsPrivate";
 function App() {
   return (
     <>
-      <meta
-        http-equiv="Content-Security-Policy"
-        content="upgrade-insecure-requests"
-      ></meta>
       <Navbar />
 
       <Routes>

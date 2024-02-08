@@ -9,6 +9,7 @@ import { PDFViewer } from "@react-pdf/renderer";
 import resume1 from "../images/resume1.jpg";
 import resume2 from "../images/resume2.jpg";
 import EditCV from "./EditCV";
+import { Helmet } from "react-helmet";
 
 const API_URL = import.meta.env.VITE_API_URL || `http://localhost:5005`;
 
@@ -63,6 +64,13 @@ function ShowCV() {
           overflow: "hidden",
         }}
       >
+        <Helmet>
+          <title>Show CV</title>
+          <meta
+            http-equiv="Content-Security-Policy"
+            content="upgrade-insecure-requests"
+          ></meta>
+        </Helmet>
         <>
           {curriculum ? (
             <>
